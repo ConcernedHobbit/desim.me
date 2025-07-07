@@ -49,7 +49,7 @@ const Index = ({ titles }: InferGetStaticPropsType<typeof getStaticProps>) => {
         />
         <meta name="og:url" content="https://desim.me" />
         <meta name="og:description" content="Desikansa electronic songbook" />
-        <meta name="og:site_name" content="esim.me" />
+        <meta name="og:site_name" content="desim.me" />
       </Head>
 
       <Header>
