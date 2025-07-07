@@ -4,7 +4,7 @@ import slugify from "./slugify";
 
 const BYTE_LIMIT = 4096;
 const TELEGRAM_BASE = "https://t.me/share/url";
-const FALLBACK_BASE_URL = "https://laulum.me/";
+const FALLBACK_BASE_URL = "https://desim.me/";
 
 const getTelegramURL = (url: string, text: string = ""): string =>
    `${TELEGRAM_BASE}?url=${encodeURIComponent(url)}&text=${encodeURIComponent(
@@ -14,7 +14,7 @@ const getTelegramURL = (url: string, text: string = ""): string =>
 /**
  * A function to generate a Telegram share link for a song.
  * @param song
- * @param baseURL Base URL for the link, e.g. "https://laulum.me" (default)
+ * @param baseURL Base URL for the link, e.g. "https://desim.me" (default)
  */
 export const getSongLink = (song: Song, baseURL?: string): string => {
   const songURL = new URL(
@@ -42,7 +42,7 @@ export const getSongLink = (song: Song, baseURL?: string): string => {
 /**
  * A function to generate a Telegram share link for a book.
  * @param book
- * @param baseUrl Base URL for the link, e.g. "https://laulum.me" (default)
+ * @param baseUrl Base URL for the link, e.g. "https://desim.me" (default)
  */
 export const getBookLink = (book: Book, baseURL?: string): string => {
   const bookURL = new URL(`/books/${book.name}`, baseURL ?? FALLBACK_BASE_URL);

@@ -33,23 +33,23 @@ const Index = ({ titles }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
-        <title>laulum.me | TKO-äly Songbook</title>
+        <title>desim.me | Desikansan sanansaattaja</title>
 
         <meta
           name="keywords"
-          content="sitsit, laulu, sanat, lyrics, sitsilaulu, laulum.me, tko-äly, sitz, table party, academic table party, pöytäjuhla"
+          content="sitsit, laulu, sanat, lyrics, sitsilaulu, desim.me, desikansa, sitz, table party, academic table party, pöytäjuhla"
         />
-        <meta name="description" content="Electronic Songbook by TKO-äly ry." />
+        <meta name="description" content="Electronic Songbook of the Desikansa" />
 
-        <meta name="og:title" content="laulum.me, the electronic songbook" />
+        <meta name="og:title" content="desim.me, the electronic songbook" />
         <meta name="og:type" content="website" />
         <meta
           name="og:image"
-          content="https://laulum.me/icons/apple-touch-icon.png"
+          content="https://desim.me/icons/apple-touch-icon.png"
         />
-        <meta name="og:url" content="https://laulum.me" />
-        <meta name="og:description" content="TKO-äly's electronic songbook" />
-        <meta name="og:site_name" content="laulum.me" />
+        <meta name="og:url" content="https://desim.me" />
+        <meta name="og:description" content="Desikansa electronic songbook" />
+        <meta name="og:site_name" content="esim.me" />
       </Head>
 
       <Header>
@@ -57,7 +57,7 @@ const Index = ({ titles }: InferGetStaticPropsType<typeof getStaticProps>) => {
           <Icon style={promptVisible ? { filter: "blur(3px)" } : {}} />
           {promptVisible && <UpdateOverlay updateWorker={updateWorker} />}
         </div>
-        <h1 className={merriweather.className}>laulum.me</h1>
+        <h1 className={merriweather.className}>desim.me</h1>
       </Header>
 
       <div
@@ -71,7 +71,7 @@ const Index = ({ titles }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
         <Footer style={{ textAlign: "center" }}>
           <Link
-            href="https://github.com/TKOaly/laulum.me"
+            href="https://github.com/ConcernedHobbit/desim.me"
             variant="primary"
             target="_blank"
             rel="noreferrer noopener"
